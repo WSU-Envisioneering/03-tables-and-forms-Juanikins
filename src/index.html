@@ -10,13 +10,126 @@
 
 <body>
   <!--  Your HTML goes here-->
-  <h1>Climant change</h1>
-  <h3>And how it effects climate change </h3>
 <script type="module" src="./javascripts/main.js"></script>
-<img src="images/polar bear school.jpg" alt="">
+<header>
+  <h1>My Simple Website</h1>
+  <nav>
+    <a href="#map">Map</a> |
+    <a href="#form">Form</a> |
+    <a href="#table">Table</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="map">
+    <h2>Image Map Example</h2>
+    <p>Click different parts of the image to visit links.</p>
+    <img src="images/tyler.jpg" usemap="#examplemap" alt="Example Map" width="600" height="300">
+    <map name="examplemap">
+      <area shape="rect" coords="10,10,150,100" href="https://medium.com/@nicebike15/wangsap-potato-salad-for-treble-5ffaa11a4996" alt="Potato Salad" target="_blank">
+      <area shape="circle" coords="300,150,50" href="https://www.vibe.com/music/music-news/tyler-the-creator-frank-ocean-911-mr-lonely-who-dat-boy-asap-rocky-523163/" alt="911 Mr" target="_blank">
+      <area shape="poly" coords="450,50,550,50,580,150,500,200" href="#form" alt="Go to Form Section">
+    </map>
+  </section>
 
 
+  <section id="form">
+    <h2>Sample Form</h2>
+    <form action="#" method="post">
+      <label>Name: <input type="text" name="name" required></label><br><br>
+      <label>Email: <input type="email" name="email" required></label><br><br>
 
+      <p>Choose an option:</p>
+      <label><input type="radio" name="choice" value="Option 1"> Option 1</label>
+      <label><input type="radio" name="choice" value="Option 2"> Option 2</label><br><br>
 
-</body>
-</html>
+      <label>Date: <input type="date" name="date"></label><br><br>
+
+      <label>Favorite Subject:
+        <select name="subject">
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>JavaScript</option>
+          <option>Python</option>
+          <option>Other</option>
+        </select>
+      </label><br><br>
+
+      <label>Message:<br>
+        <textarea name="message" rows="4" cols="40"></textarea>
+      </label><br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </section>
+
+  <section id="table">
+    <h2>Sample Table</h2>
+    <table>
+      <caption>Example Data Table</caption>
+      <colgroup>
+        <col style="background-color:#f0f0f0;">
+        <col style="background-color:#fff;">
+        <col style="background-color:#f9f9f9;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">1</td>
+          <td>Item A</td>
+          <td>Detail 1</td>
+        </tr>
+        <tr>
+          <td colspan="2">Extra details about Item A</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Item B</td>
+          <td>Detail 2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Item C</td>
+          <td>Detail 3</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Item D</td>
+          <td>Detail 4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Item E</td>
+          <td>Detail 5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Item F</td>
+          <td>Detail 6</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Item G</td>
+          <td>Detail 7</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">End of Table</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 My Simple Website</p>
+</footer>
